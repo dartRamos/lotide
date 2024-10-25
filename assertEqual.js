@@ -6,5 +6,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp"); // assertEqual allows for more style like adding emotes
+assertEqual("Lighthouse Labs", "Bootcamp"); // assertEqual allows for more style like adding emotes and text with results
 assertEqual(1, 1);
