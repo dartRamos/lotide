@@ -17,8 +17,8 @@ assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs");
 
 const single = ["Hello"];
-const i = tail(single);
-assertEqual(i.length, 0);
+const singleTail = tail(single);
+assertEqual(singleTail.length, 0);
 
 const empty = [];
 const emptyTail = tail(empty);
