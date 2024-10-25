@@ -10,11 +10,17 @@ const tail = function(array) {
   return array.slice(1);
 };
 
+
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2);
-assertEqual(result[0], 'Lighthouse');
-assertEqual(result[1], 'Labs');
+assertEqual(result[0], "Lighthouse");
+assertEqual(result[1], "Labs");
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
+const single = ["Hello"];
+const i = tail(single);
+assertEqual(i.length, 0);
+
+const empty = [];
+const emptyTail = tail(empty);
+assertEqual(emptyTail, []);
+assertEqual(empty.length, 0);
