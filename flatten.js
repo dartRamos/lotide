@@ -20,13 +20,11 @@ const eqArrays = function(array1, array2) {
 };
 
 const flatten = function(array) {
-  const result = [];
+  let result = [];
 
   for (let f = 0; f < array.length; f++) {
     if (Array.isArray(array[f])) {
-      for (let g = 0; g < array[f].length; g++) {
-        result.push(array[f][g]);
-      }
+      result = result.concat(array[f]); // is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
     } else {
       result.push(array[f]);
     }
