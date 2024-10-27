@@ -12,7 +12,7 @@ const eqArrays = function(array1, array2) {
 };
 
 const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected) === true) {
+  if (eqArrays(actual, expected)) {
     console.log(`🎇🎇🎇Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🚫🚫🚫Assertion Failed: ${actual} !== ${expected}`);
@@ -20,20 +20,17 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 const middle = function(arr) {
-  const center = arr.length;
+  const arrLength = arr.length;
 
-  if (center <3) {
-    return [];
-  }
-
-  if (center % 2 !== 0) {
-    const centerArr = Math.floor(center / 2);
-    return [arr[centerArr]];
+  if (arrLength < 3) {
+    return []; 
+  } else if (arrLength % 2 !== 0) {
+    const centerArr = Math.floor(arrLength / 2);
+    return [arr[centerArr]]; 
   } else {
-    
-    const centerArr1 = (center / 2) - 1;
+    const centerArr1 = (arrLength / 2) - 1;
     const centerArr2 = centerArr1 + 1;
-    return [arr[centerArr1], arr[centerArr2]];
+    return [arr[centerArr1], arr[centerArr2]]; 
   }
 };
 
