@@ -21,7 +21,6 @@ const assertArraysEqual = function(actual, expected) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  sentence = sentence.replace(/ /g, "");
 
   for (let i = 0; i < sentence.length; i++) {
     if (!results[sentence[i]]) {
@@ -45,8 +44,8 @@ const result1 = letterPositions("hello world");
 
 assertArraysEqual(result1["h"], [0]);
 assertArraysEqual(result1["e"], [1]);
-assertArraysEqual(result1["l"], [2, 3, 8]);
-assertArraysEqual(result1["o"], [4, 6]);
-assertArraysEqual(result1["w"], [5]);
-assertArraysEqual(result1["r"], [7]);
-assertArraysEqual(result1["d"], [9]);
+assertArraysEqual(result1["l"], [2, 3, 9]);
+assertArraysEqual(result1["o"], [4, 7]);
+assertArraysEqual(result1["w"], [6]);
+assertArraysEqual(result1["r"], [8]);
+assertArraysEqual(result1["d"], [10]);
