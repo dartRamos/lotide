@@ -19,7 +19,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   sentence = sentence.replace(/ /g, "");
 
@@ -31,8 +31,8 @@ const letterPositions = function (sentence) {
     }
   }
 
-    return results;
-  };
+  return results;
+};
 
 const result = letterPositions("hello");
 
