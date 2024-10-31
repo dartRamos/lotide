@@ -28,12 +28,12 @@ const eqObjects = function (object1, object2) {
     return false;
   }
 
-  if (Array.isArray(object1) && Array.isArray(object2)){
-    return eqArrays(object1, object2);
-  }
+  for (let key of objKey1) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])){
+      return eqArrays(object1[key], object2[key]);
+    }
 
-  for (let key in objKey1) {
-    if (objKey2.includes(key) || object1[key] !== object2[key]) {
+    if (!objKey2.includes(key) || object1[key] !== object2[key]) {
       return false;
     }
   }
