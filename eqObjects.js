@@ -34,8 +34,7 @@ const eqObjects = function (object1, object2) {
         return false 
       }
     }
-
-    else if (!objKey2.includes(key) || object1[key] !== object2[key]) {
+    else if (object1[key] !== object2[key]) { // use else if so that this part of the code only runs if the previous code doesnt pass
       return false;
     } 
   }
