@@ -10,6 +10,10 @@ const single = ["Hello"];
 const singleTail = tail(single);
 assertEqual(singleTail.length, 0);
 
-const empty = []; // Unable to figure out how to get passed instead of fail
+const empty = [];
 const emptyTail = tail(empty);
 assertEqual(emptyTail.length, 0);
+
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words);
+assertEqual(words.length, 3);
