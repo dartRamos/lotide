@@ -1,3 +1,0 @@
-Testing out VIM insert using "i" Testing out VIM insert using "a"
-
-testing this using yy
