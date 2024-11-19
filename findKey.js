@@ -36,3 +36,5 @@ assertEqual(findKey(objGiven, (x) => x.stars === 4), undefined);
 assertEqual(findKey(objGiven, (x) => x.stars === 1), "Blue Hill");
 
 assertEqual(findKey(objGiven, (x) => x.stars === 0), undefined);
+
+module.exports = findKey;

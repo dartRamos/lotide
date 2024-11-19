@@ -1,3 +1,5 @@
+const eqArrays = require('./eqArrays');
+
 const eqObjects = function (object1, object2) {
   const objKey1 = Object.keys(object1);
   const objKey2 = Object.keys(object2);
@@ -36,3 +38,5 @@ const object3 = { a: 1, b: 3 };
 
 assertObjectEqual(object1, object2);
 assertObjectEqual(object1, object3);
+
+module.exports = assertObjectEqual;

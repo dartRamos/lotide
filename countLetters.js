@@ -1,3 +1,4 @@
+// FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🎇🎇🎇Assertion Passed: ${actual} === ${expected}`); // Using `` allows you to embed expressions inside ${} in string
@@ -27,3 +28,5 @@ const result1 = countLetters("lighthouse in the house");
 assertEqual(result1["l"], 2);
 assertEqual(result1["i"], 2);
 assertEqual(result1["e"], 3);
+
+module.exports = countLetters;

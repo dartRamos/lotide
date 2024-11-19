@@ -1,3 +1,4 @@
+// FUNCTION IMPLEMENTATION
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -60,4 +61,6 @@ const longSleeveMultiColorShirtObject = {
 };
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
 
-assertEqual(eqObjects(multiColorShirtObject, multiColorShirtObject), true)
+assertEqual(eqObjects(multiColorShirtObject, multiColorShirtObject), true);
+
+module.exports = eqObjects;
